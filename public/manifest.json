@@ -11,9 +11,5 @@
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#3f51b5",
-  "background_color": "#ECF0F1",
-  "content_scripts": [{
-        "js": ["./js/main.fcd9264d.js"],
-        "css": ["./css/main.175cd0ba.css"]
-    }]
+  "background_color": "#ECF0F1"
 }
