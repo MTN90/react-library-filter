@@ -1,0 +1,85 @@
+@import "../../../scss/variables";
+
+ul{
+  list-style-type: none;
+  padding:0;
+
+  li{
+    display:block;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    padding:0 0 0 25px;
+    border-bottom:1px solid #e1e1e1;
+    background-color:white;
+    box-shadow:0px 2px 3px $shadow;
+
+    a{
+      display:flex;
+      flex-direction:row-reverse;
+      text-decoration:none;
+      color:$secondaryText;
+      cursor:pointer;
+
+      span{
+        display:block;
+        width:calc(100% - 50px);
+
+        span{
+          display:inline;
+          width:auto;
+        }
+        .highlight{
+          color:$primaryText;
+          font-weight:bold;
+          background-color:transparent;
+        }
+      }
+
+      i.fa-university{
+
+      }
+    }
+
+    &:hover{
+      background-color:$accent;
+
+      a{
+        color:white;
+
+        .highlight{
+          color:white;
+        }
+      }
+
+      .fa-university{
+        color:white;
+      }
+    }
+  }
+
+  li#noResult{
+    background-color:transparent;
+    box-shadow:none;
+    border:none;
+
+    a{
+      flex-direction:row;
+      cursor:default;
+
+      span{
+        width:auto;
+      }
+    }
+
+    &:hover{
+      background-color:transparent;
+      a{
+        color:$secondaryText;
+      }
+      .fa-book{
+        color:$secondaryText;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+ul {
+  list-style-type: none;
+  padding: 0; }
+  ul li {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0 0 25px;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25); }
+    ul li a {
+      display: flex;
+      flex-direction: row-reverse;
+      text-decoration: none;
+      color: #757575;
+      cursor: pointer; }
+      ul li a span {
+        display: block;
+        width: calc(100% - 50px); }
+        ul li a span span {
+          display: inline;
+          width: auto; }
+        ul li a span .highlight {
+          color: #424242;
+          font-weight: bold;
+          background-color: transparent; }
+    ul li:hover {
+      background-color: #d81b60; }
+      ul li:hover a {
+        color: white; }
+        ul li:hover a .highlight {
+          color: white; }
+      ul li:hover .fa-university {
+        color: white; }
+  ul li#noResult {
+    background-color: transparent;
+    box-shadow: none;
+    border: none; }
+    ul li#noResult a {
+      flex-direction: row;
+      cursor: default; }
+      ul li#noResult a span {
+        width: auto; }
+    ul li#noResult:hover {
+      background-color: transparent; }
+      ul li#noResult:hover a {
+        color: #757575; }
+      ul li#noResult:hover .fa-book {
+        color: #757575; }
