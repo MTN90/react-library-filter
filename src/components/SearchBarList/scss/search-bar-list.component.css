@@ -43,6 +43,10 @@ ul {
       cursor: default; }
       ul li#noResult a span {
         width: auto; }
+        ul li#noResult a span .highlight {
+          color: #424242;
+          font-weight: bold;
+          background-color: transparent; }
     ul li#noResult:hover {
       background-color: transparent; }
       ul li#noResult:hover a {

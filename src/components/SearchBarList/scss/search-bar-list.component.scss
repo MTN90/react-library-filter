@@ -69,6 +69,12 @@ ul{
 
       span{
         width:auto;
+
+        .highlight{
+          color:$primaryText;
+          font-weight:bold;
+          background-color:transparent;
+        }
       }
     }
 
